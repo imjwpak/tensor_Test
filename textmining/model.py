@@ -44,11 +44,23 @@ class SamsungReport:
         print('---------------추출된 명사 300--------------------')
         print(texts[:300])
 
+
     @staticmethod
     def download():
         nltk.download()
 
+    @staticmethod
+    def remove_stopword():
+        stopfile = './data/stopwords.txt'
 
+        with open(stopfile, 'r', encoding='utf-8') as f:
+            stopwords = f.read()
+
+        stopwords = stopwords.split(' ')
+        print('----------제거할 단어-------------')
+        print(stopwords[:10])
+
+        return stopwords
 
 
 
