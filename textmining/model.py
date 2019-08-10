@@ -41,8 +41,8 @@ class SamsungReport:
                 noun_tokens.append(''.join(temp))
 
             texts = ' '.join(noun_tokens)
-            print('---------------추출된 명사 300--------------------')
-            print(texts[:300])
+        print('---------------추출된 명사 300--------------------')
+        print(texts[:300])
 
     @staticmethod
     def download():
