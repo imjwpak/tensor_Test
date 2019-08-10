@@ -4,6 +4,7 @@ from webcrawl.naverkospi import NaverKospiCrawler
 from webcrawl.krx import KrxCrawler
 from webcrawl.naver_stock import StockCrawler
 from webcrawl.naver_movie import NaverMovieCrawler
+from webcrawl.naver_login import NaverLogin
 
 class Controller:
     def __init__(self):
@@ -33,3 +34,7 @@ class Controller:
         elif flag == 'm':
             nm = NaverMovieCrawler('https://movie.naver.com/movie/sdb/rank/rmovie.nhn')
             nm.scrap()
+
+        elif flag == 'l':
+            nl = NaverLogin('https://nid.naver.com/nidlogin.login')
+            nl.auto_login()

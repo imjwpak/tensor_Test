@@ -6,6 +6,7 @@ if __name__ == '__main__':
     print('p. Naver Kospi 크롤링')
     print('s. Naver Stock 크롤링')
     print('m. Naver Movie 크롤링')
+    print('l. Naver 자동 로그인')
     print('k. KRX 크롤링')
     print('q. 종료')
 
